@@ -1,0 +1,22 @@
+<p>login-page works!</p>
+<small >{{responce}}</small><br>
+<form [formGroup]="loginform" (ngSubmit)="onSubmit(loginform.value)">
+  
+   <div>
+    <label for="id">
+      Login Id
+    </label>
+    <input id="id" type="text" formControlName="id">
+  </div>
+<br>
+  <div>
+    <label for="Password">
+      Password
+    </label>
+    <input id="Password" type="password" formControlName="Password">
+  </div>
+<br>  
+  <button class="button" type="submit">Login</button>
+
+</form>
+
