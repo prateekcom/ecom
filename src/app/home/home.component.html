@@ -1,1 +1,22 @@
 <p>home works!</p>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<div class="listing" *ngFor="let product of products; index as productId">
+        <h3>
+            <a [title]="product.name +' details'"[routerLink]="['/products',productId]">
+                {{product.name}}
+            </a>   
+        </h3>
+        <img src="{{ product.image }}" alt="product.name" >
+    <p *ngIf="product description">
+        {{ product.description }}
+    </p>
+    <p>
+        {{product.price}}
+    </p>
+    <a class="button fancy-button">
+        <i class="material-icons">shopping_bag</i>
+        BuyNow
+    </a>
+</div>

@@ -11,4 +11,11 @@ app-top-bar{
 app-top-bar h1 {
     color: white;
     margin: 0;
+}
+.listing {
+  border-radius: 25px;
+  border: 1px solid #73AD21;
+  padding: 20px;
+  display: inline-table;
+  margin: 20px;    
 } 

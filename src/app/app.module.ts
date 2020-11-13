@@ -10,6 +10,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path:'',component: HomeComponent  },
       { path:'login',component:LoginPageComponent },
-      { path:'welcome' ,component:DashboardComponent }
+      { path:'welcome' ,component:DashboardComponent },
+      { path:'products/:productId',component:HomeComponent }  
     ])
   ],
   providers: [],
