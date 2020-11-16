@@ -1,3 +1,4 @@
+import { AuthenticationService } from './../authentication.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
-  constructor() { }
+  userName:String;
+  isloggedin:Boolean;
+  constructor(
+    private authService:AuthenticationService
+  ) { 
+      this.isloggedin = this.authService.validate
+      this.userName = this.authService.currentuser
+   }
 
   ngOnInit(): void {
   }
 
 }
+ 

@@ -5,7 +5,7 @@
     <h2> ShopKirana </h2>
 </a>    
 
-<a routerLink = "/login" class= "button fancy-button">
+<a *ngIf="!isloggedin" routerLink = "/login" class= "button fancy-button">
     <i class="material-icons">login  </i>
     Login    
 </a>

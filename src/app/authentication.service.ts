@@ -9,11 +9,13 @@ import { BuiltinTypeName } from '@angular/compiler';
 export class AuthenticationService {
   idpassword = idpassword;
   validate = false;
+  currentuser:String;
   constructor() { }
   authenticate(name:any,password:any){
     for(var item of idpassword){      
      if( item.id == name && item.password ==password){
        this.validate = true;
+       this.currentuser = name;
       }
     }
     return this.validate
