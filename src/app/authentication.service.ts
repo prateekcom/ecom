@@ -23,9 +23,11 @@ export class AuthenticationService {
     return this.validate 
   }
 
-  isLoggedInUser(){
-    
+  isLoggedInUser(){  
     return this.validate;
+  }
+  logout(){
+    this.validate = false;
   }
 
 }
