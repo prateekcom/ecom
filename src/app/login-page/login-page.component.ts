@@ -32,12 +32,14 @@ export class LoginPageComponent implements OnInit {
     console.log("details are",Customerdata)
     if(this.authService.authenticate(Customerdata.id,Customerdata.Password)){
       
-       this.router.navigate(['welcome'])
+       this.router.navigate([''])
        this.responce=true;
+       console.log(this.responce)
      }
      // onsubmit function passing 2 inputs directly 
      else {
         this.responce=false;
+        console.log(this.responce)
      }
   }
   

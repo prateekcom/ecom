@@ -4,8 +4,12 @@
 <a [routerLink] = "['/']">
     <h2> ShopKirana </h2>
 </a>    
-
-<a *ngIf="!isloggedin" routerLink = "/login" class= "button fancy-button">
+{{authService.isLoggedInUser()}}
+<a *ngIf="!authService.isLoggedInUser()" routerLink = "/login" class= "button fancy-button">
     <i class="material-icons">login  </i>
     Login    
+</a>
+<a *ngIf="authService.isLoggedInUser()" routerLink = "/welcome" class= "button fancy-button">
+    <i class="material-icons">account_circle  </i>
+    Welcome {{authService.currentuser}}     
 </a>

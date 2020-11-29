@@ -11,13 +11,9 @@ export class TopBarComponent implements OnInit {
   isloggedin:Boolean;
   constructor(
     private authService:AuthenticationService
-  ) { 
-      this.isloggedin = this.authService.validate
-      this.userName = this.authService.currentuser
-   }
+  ) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
  
