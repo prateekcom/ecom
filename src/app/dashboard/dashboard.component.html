@@ -1,3 +1,11 @@
 <p>dashboard works!</p>
-<button onclick="authService.logout()">Logout</button>
+<p> User Name: {{authService.currentuser}} </p>
+<button  (click)="authService.logout()" > Logout</button>
 {{authService.isLoggedInUser()}}
+
+<h3>MY CART</h3>
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+  </div>
+  
