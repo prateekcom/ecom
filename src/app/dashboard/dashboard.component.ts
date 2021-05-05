@@ -1,5 +1,7 @@
 import { AuthenticationService } from './../authentication.service';
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
+
   
 @Component({
   selector: 'app-dashboard',
@@ -9,10 +11,13 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   constructor(
-    private authService: AuthenticationService
-  ) { }
+    public authService: AuthenticationService,
+    private cartService: CartService
 
+  ) {}
+  items = this.cartService.getItems();
   ngOnInit(): void {
   }
 
 }
+
