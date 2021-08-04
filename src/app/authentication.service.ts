@@ -11,7 +11,7 @@ export class AuthenticationService {
   validate = false;
   currentuser:String;
   constructor() { }
-  authenticate(name:any,password:any){
+  authenticate(name:String,password:any){
     this.validate = false;
     for(var item of idpassword){      
      if( item.id === name && item.password === password){

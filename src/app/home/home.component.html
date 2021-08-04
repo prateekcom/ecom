@@ -10,10 +10,10 @@
 </head>
 <div class="listing" *ngFor="let product of products; index as productId">
     <div class="container d-flex justify-content-center">
-        <figure class="card card-product-grid card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img src="{{ product.image }}"> </a>
+        <figure class="card card-product-grid card-lg"> <a [routerLink] ="['/products',productId]" class="img-wrap" data-abc="true"> <img src="{{ product.image }}"> </a>
             <figcaption class="info-wrap">
                 <div class="row">
-                    <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">{{product.name}}</a> <span class="rated">Grocrey</span> </div>
+                    <div class="col-md-9 col-xs-9"> <a [routerLink] ="['/products',productId]" class="title" data-abc="true">{{product.name}}</a> <span class="rated">Grocery</span> </div>
                     <div class="col-md-3 col-xs-3">
                         <div class="rating text-right"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <span class="rated">Rated 4.0/5</span> </div>
                     </div>
@@ -24,12 +24,12 @@
                     <div class="row">
                         <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">{{product.price}}</a> <span class="rated">Including Taxes</span> </div>
                         <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> ## 8787 </div>
+                            
                         </div>
                     </div>
                 </figcaption>
             </div>
-            <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" (click)="addToCart(product)" data-abc="true"> Buy now </a>
+            <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" (click)="addToCart(product)" data-abc="true"> Add to Cart </a>
                 <div class="price-wrap"> <a href="#" class="btn btn-warning float-left" data-abc="true"> Cancel </a> </div>
             </div>
         </figure>
@@ -56,4 +56,4 @@
     </a>
 </div> -->
 
-
+<!-- <github-pages-update> -->

@@ -11,7 +11,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ApiLearnComponent } from './api-learn/api-learn.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { ApiLearnComponent } from './api-learn/api-learn.component';
     TopBarComponent,
     LoginPageComponent,
     HomeComponent,
-    DashboardComponent,
-    ApiLearnComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +30,6 @@ import { ApiLearnComponent } from './api-learn/api-learn.component';
       { path:'',component: HomeComponent  },
       { path:'login',component:LoginPageComponent },
       { path:'welcome' ,component:DashboardComponent },
-      { path:'api-learn',component:ApiLearnComponent },
       { path:'products/:productId',component:HomeComponent }  
     ])
   ],

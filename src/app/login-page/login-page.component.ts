@@ -40,6 +40,7 @@ export class LoginPageComponent implements OnInit {
      else {
         this.responce=false;
         console.log(this.responce)
+        alert("incorrect Id/pass")
      }
   }
   

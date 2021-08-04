@@ -16,8 +16,8 @@ export class DashboardComponent implements OnInit {
 
   ) {}
   items = this.cartService.getItems();
-  ngOnInit(): void {
-  }
+  bill = this.cartService.getbill();
+  ngOnInit(): void {}
 
 
   

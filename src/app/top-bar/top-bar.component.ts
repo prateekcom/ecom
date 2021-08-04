@@ -10,7 +10,7 @@ export class TopBarComponent implements OnInit {
   userName:String;
   isloggedin:Boolean;
   constructor(
-    public authService:AuthenticationService
+    public authService:AuthenticationService,
   ) {}
 
   ngOnInit(): void {}

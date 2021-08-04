@@ -5,6 +5,11 @@
     <h2> ShopKirana </h2>
 </a>    
 {{authService.isLoggedInUser()}}
+#### search bar 
+<!-- <form class="form-inline my-2 my-lg-0">
+    <input type="search" (ngModelChange)="searchProducts(key.value)" #key="ngModel" ngModel
+     name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search products..." required>
+</form> -->
 <a *ngIf="!authService.isLoggedInUser()" routerLink = "/login" class= "button fancy-button">
     <i class="material-icons">login  </i>
     Login    
