@@ -3,37 +3,37 @@ export const products = [
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: 'ecom/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
     {
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: '/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
     {
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: '/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
     {
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: '/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
     {
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: '/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
     {
       name: 'Tea',
       price: 249,
       description: 'Assam Imported Tea, organic',
-      image: '/assets/images/tea.jpg'
+      image: 'assets/images/tea.jpg'
     },
   ];
   
