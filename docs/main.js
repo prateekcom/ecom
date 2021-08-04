@@ -284,7 +284,7 @@ const products = [
         name: 'Tea',
         price: 249,
         description: 'Assam Imported Tea, organic',
-        image: '/assets/images/tea.jpg'
+        image: 'ecom/assets/images/tea.jpg'
     },
     {
         name: 'Tea',
